@@ -20,7 +20,7 @@ def main():
     while turns < 9:
         active_player = current_player(player)
         display_board(board)
-        player_turn = input("Choose a square (1-9) or 'q' to quit the game: ")
+        player_turn = input(f"Player {turns} Choose a square (1-9) or 'q' to quit the game: ")
         if quit_game(player_turn):
             break
         if not check_turn(player_turn):
